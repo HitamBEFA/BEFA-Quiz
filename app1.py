@@ -2,7 +2,7 @@ import streamlit as st
 from PyPDF2 import PdfReader
 
 # Backend-provided file path
-PDF_PATH = "4b.pdf"
+PDF_PATH = "4a.pdf"
 
 def extract_questions(pdf_path):
     """
@@ -107,5 +107,5 @@ def main():
         st.warning("No questions could be extracted from the PDF.")
 
 # Run the Streamlit app
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
