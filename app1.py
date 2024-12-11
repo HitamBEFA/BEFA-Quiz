@@ -42,6 +42,9 @@ def extract_questions(pdf_path):
             elif line.lower().startswith("answer:"):
                 if current_question:
                     current_question["answer"] = line.split(":", 1)[-1].strip()
+            else:
+                if current_question:
+                    questions.append(current_question)
         
         # Add the last question
         if current_question and current_question not in questions:
