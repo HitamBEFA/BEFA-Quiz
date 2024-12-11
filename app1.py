@@ -109,4 +109,3 @@ def main():
 # Run the Streamlit app
 if _name_== "_main_":
     main()
-    name()
