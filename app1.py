@@ -2,7 +2,7 @@ import streamlit as st
 from PyPDF2 import PdfReader
 
 # Backend-provided file path
-PDF_PATH = "4b"
+PDF_PATH = "4a.pdf"
 
 def extract_questions(pdf_path):
     """
@@ -51,7 +51,7 @@ def extract_questions(pdf_path):
 
 # Streamlit App
 def main():
-    st.title("BEFA Quiz")
+    st.title("Backend PDF Quiz Generator")
 
     st.write("Extracting quiz questions from the provided PDF...")
 
@@ -107,5 +107,5 @@ def main():
         st.warning("No questions could be extracted from the PDF.")
 
 # Run the Streamlit app
-if '__name__'== "_main_":
+if _name_ == "_main_":
     main()
