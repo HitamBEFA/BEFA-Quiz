@@ -107,5 +107,5 @@ def main():
         st.warning("No questions could be extracted from the PDF.")
 
 # Run the Streamlit app
-if __name__== "_main_":
+if '__name__'== "_main_":
     main()
