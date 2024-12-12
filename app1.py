@@ -2,7 +2,7 @@ import streamlit as st
 from PyPDF2 import PdfReader
 
 # Backend-provided file path
-PDF_PATH = "4b.pdf"
+PDF_PATH = "4.pdf"
 
 def extract_questions(pdf_path):
     """
